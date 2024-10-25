@@ -1,0 +1,69 @@
+@import url(global.css);
+
+body {
+    background: var(--colors-background);
+}
+
+.initial {
+    height: 40em;
+    display: flex;
+    position: relative;
+}
+
+.initial-image {
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    object-position: center;
+}
+
+.initial-image.mobile {
+    display: none;
+    visibility: hidden;
+}
+
+.initial-content {
+    width: 80%;
+    display: flex;
+    margin-top: 10em;
+    align-self: center;
+}
+
+.initial-title {
+    width: 10em;
+    font-size: var(--fonts-size-main-title);
+}
+
+.initial-description {
+    width: 50%;
+    margin-top: 1em;
+    line-height: 1.5em;
+    font-size: var(--fonts-size-description);
+}
+
+@media screen and (max-width: 900px) {
+    .initial {
+        height: 30em;
+    }
+    
+    .initial-image.desktop {
+        display: none;
+        visibility: hidden;
+    }
+
+    .initial-image.mobile {
+        display: flex;
+        visibility: visible;
+    }
+
+    .initial-content {
+        width: 90%;
+        margin-top: 8em;
+    }
+
+    .initial-title {
+        width: 9em;
+    }
+}

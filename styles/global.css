@@ -1,0 +1,128 @@
+:root {
+    /* Colors */
+    --colors-color: #FFFFFF;
+    --colors-primary: #0064FF;
+    --colors-background: #EFF0F5;
+    --colors-selection: #2C66DB46;
+    --colors-background-secondary: #FFFFFF;
+
+    /* Fonts */
+    --fonts-family: 'Aptos';
+    --fonts-size-title: 2.5em;
+    --fonts-size-subtitle: 1.5em;
+    --fonts-size-main-title: 3.25em;
+    --fonts-size-description: 1.13em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: var(--colors-color);
+    font-family: var(--fonts-family);
+}
+
+*::selection {
+    background-color: var(--colors-selection);
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url(../public/aptos.ttf)
+}
+
+header {
+    width: 80%;
+    padding: 1em;
+    display: flex;
+    position: fixed;
+    margin-top: 1em;
+    align-self: center;
+    border-radius: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--colors-background-secondary);
+}
+
+.header-buttons {
+    gap: 1em;
+    display: flex;
+    margin-left: auto;
+    flex-direction: row;
+}
+
+.button {
+    width: 10em;
+    display: flex;
+    font-weight: bold;
+    padding: 0.8em 1em;
+    align-items: center;
+    border-radius: 30px;
+    text-decoration: none;
+    justify-content: center;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    font-size: var(--fonts-size-description);
+    background-color: var(--colors-primary);
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button-outlined {
+    width: 10em;
+    display: flex;
+    font-weight: bold;
+    padding: 0.8em 1em;
+    align-items: center;
+    border-radius: 30px;
+    text-decoration: none;
+    justify-content: center;
+    transition-duration: 0.2s;
+    color: var(--colors-primary);
+    transition-timing-function: linear;
+    font-size: var(--fonts-size-description);
+    border: 2px solid var(--colors-primary);
+    background-color: var(--colors-background-secondary);
+}
+
+.button-outlined:hover {
+    transform: scale(1.05);
+}
+
+main {
+    display: flex;
+    min-height: 93.4vh;
+}
+
+body {
+    display: flex;
+}
+
+footer {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--colors-primary);
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --fonts-size-title: 2.5em;
+        --fonts-size-subtitle: 1.5em;
+        --fonts-size-main-title: 2em;
+        --fonts-size-description: 0.8em;
+    }
+
+    header {
+        width: 90%;
+    }
+    
+    .button, .button-outlined {
+        width: 8em;
+    }
+}
