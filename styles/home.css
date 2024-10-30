@@ -282,7 +282,7 @@ body {
 
 @media screen and (max-width: 900px) {
     .initial {
-        height: 34em;
+        height: 100vh;
     }
     
     .initial-image.desktop {
@@ -298,11 +298,11 @@ body {
     .initial-container {
         width: 90%;
         padding: 0;
-        margin-top: 8em;
+        margin-top: 10em;
     }
 
     .initial-content {
-        width: 50%;
+        width: 60%;
     }
 
     .options {
