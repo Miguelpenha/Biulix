@@ -5,6 +5,7 @@
     --colors-background: #EFF0F5;
     --colors-selection: #2C66DB46;
     --colors-color-secondary: #000000;
+    --colors-background-tertiary: #BBBBBB;
     --colors-background-secondary: #FFFFFF;
 
     /* Fonts */
@@ -12,7 +13,7 @@
     --fonts-size-title: 2.2em;
     --fonts-size-subtitle: 1.7em;
     --fonts-size-main-title: 3.25em;
-    --fonts-size-description: 1.3em;
+    --fonts-size-description: 1.1em;
 }
 
 * {
@@ -86,22 +87,6 @@ header {
     transform: scale(1.05);
 }
 
-.icon-button {
-    width: 12em !important;
-    padding: 0.2em 0.2em !important;
-    padding-left: 1em !important;
-}
-
-.button-icon-arrow {
-    width: 2.5em;
-    height: auto;
-    padding: 0.5em;
-    margin-left: auto;
-    border-radius: 50%;
-    fill: var(--colors-primary);
-    background-color: var(--colors-color);
-}
-
 .button-outlined {
     width: 9em;
     display: flex;
@@ -143,6 +128,22 @@ header {
 
 .button-outlined-secondary:hover {
     transform: scale(1.05);
+}
+
+.icon-button {
+    width: 12em !important;
+    padding: 0.2em 0.2em !important;
+    padding-left: 1em !important;
+}
+
+.button-icon-arrow {
+    width: 2.5em;
+    height: auto;
+    padding: 0.5em;
+    margin-left: auto;
+    border-radius: 50%;
+    fill: var(--colors-primary);
+    background-color: var(--colors-color);
 }
 
 main {
