@@ -8,6 +8,7 @@ body {
     height: 40em;
     display: flex;
     position: relative;
+    flex-direction: row;
 }
 
 .initial-image {
@@ -24,28 +25,83 @@ body {
     visibility: hidden;
 }
 
-.initial-content {
+.initial-container {
     width: 80%;
+    margin: auto;
     display: flex;
-    margin-top: 10em;
-    align-self: center;
+    padding: 0 1em;
+    margin-top: 12em;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.initial-content {
+    width: 35em;
+    display: flex;
 }
 
 .initial-title {
-    width: 10em;
     font-size: var(--fonts-size-main-title);
 }
 
 .initial-description {
-    width: 50%;
     margin-top: 1em;
     line-height: 1.5em;
     font-size: var(--fonts-size-description);
 }
 
+.initial-button {
+    margin-top: 1.5em;
+}
+
+.options {
+    gap: 3em;
+    display: flex;
+    padding: 0 5%;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.option {
+    width: 100%;
+    display: flex;
+    max-width: 22em;
+    padding: 3em 1em;
+    position: relative;
+    border-radius: 15px;
+    align-items: center;
+    text-decoration: none;
+    background-color: #FFFFFF;
+}
+
+.option-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: var(--fonts-size-subtitle);
+    color: var(--colors-color-secondary);
+}
+
+.option-subtitle {
+    text-align: center;
+    font-size: var(--fonts-size-subtitle);
+    color: var(--colors-color-secondary);
+}
+
+.option-icon {
+    bottom: -15%;
+    width: 3.5em;
+    height: 3.5em;
+    padding: 0.5em;
+    position: absolute;
+    border-radius: 50%;
+    fill: var(--colors-color);
+    border: 4px solid var(--colors-color);
+    background-color: var(--colors-primary);
+}
+
 @media screen and (max-width: 900px) {
     .initial {
-        height: 30em;
+        height: 34em;
     }
     
     .initial-image.desktop {
@@ -58,12 +114,30 @@ body {
         visibility: visible;
     }
 
-    .initial-content {
+    .initial-container {
         width: 90%;
+        padding: 0;
         margin-top: 8em;
     }
 
-    .initial-title {
-        width: 9em;
+    .initial-content {
+        width: 50%;
+    }
+
+    .options {
+        padding: 0;
+    }
+
+    .option {
+        padding: 2em 1em;
+    }
+
+    .option-title, .option-subtitle {
+        font-size: var(--fonts-size-description);
+    }
+
+    .option-icon {
+        width: 2.5em;
+        height: 2.5em;
     }
 }

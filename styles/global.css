@@ -4,14 +4,15 @@
     --colors-primary: #0064FF;
     --colors-background: #EFF0F5;
     --colors-selection: #2C66DB46;
+    --colors-color-secondary: #000000;
     --colors-background-secondary: #FFFFFF;
 
     /* Fonts */
     --fonts-family: 'Aptos';
-    --fonts-size-title: 2.5em;
-    --fonts-size-subtitle: 1.5em;
+    --fonts-size-title: 2.2em;
+    --fonts-size-subtitle: 1.7em;
     --fonts-size-main-title: 3.25em;
-    --fonts-size-description: 1.13em;
+    --fonts-size-description: 1.3em;
 }
 
 * {
@@ -47,20 +48,32 @@ header {
     background-color: var(--colors-background-secondary);
 }
 
+.header-logo {
+    width: 10em;
+    height: auto;
+    margin-left: 1em;
+    align-self: center;
+}
+
 .header-buttons {
     gap: 1em;
     display: flex;
+    flex-wrap: wrap;
+    margin-right: 1em;
     margin-left: auto;
+    align-items: center;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 .button {
-    width: 10em;
+    width: 9em;
     display: flex;
     font-weight: bold;
-    padding: 0.8em 1em;
+    flex-direction: row;
     align-items: center;
     border-radius: 30px;
+    padding: 0.6em 0.5em;
     text-decoration: none;
     justify-content: center;
     transition-duration: 0.2s;
@@ -73,13 +86,30 @@ header {
     transform: scale(1.05);
 }
 
+.icon-button {
+    width: 12em !important;
+    padding: 0.2em 0.2em !important;
+    padding-left: 1em !important;
+}
+
+.button-icon-arrow {
+    width: 2.5em;
+    height: auto;
+    padding: 0.5em;
+    margin-left: auto;
+    border-radius: 50%;
+    fill: var(--colors-primary);
+    background-color: var(--colors-color);
+}
+
 .button-outlined {
-    width: 10em;
+    width: 9em;
     display: flex;
     font-weight: bold;
-    padding: 0.8em 1em;
     align-items: center;
     border-radius: 30px;
+    flex-direction: row;
+    padding: 0.6em 0.5em;
     text-decoration: none;
     justify-content: center;
     transition-duration: 0.2s;
@@ -91,6 +121,27 @@ header {
 }
 
 .button-outlined:hover {
+    transform: scale(1.05);
+}
+
+.button-outlined-secondary {
+    width: 9em;
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    padding: 0.6em 0.5em;
+    text-decoration: none;
+    justify-content: center;
+    transition-duration: 0.2s;
+    color: var(--colors-color);
+    transition-timing-function: linear;
+    border: 2px solid var(--colors-color);
+    font-size: var(--fonts-size-description);
+}
+
+.button-outlined-secondary:hover {
     transform: scale(1.05);
 }
 
@@ -116,14 +167,24 @@ footer {
         --fonts-size-title: 2.5em;
         --fonts-size-subtitle: 1.5em;
         --fonts-size-main-title: 2em;
-        --fonts-size-description: 0.8em;
+        --fonts-size-description: 0.9em;
     }
 
     header {
         width: 90%;
     }
+
+    .header-logo {
+        width: 6em;
+        margin-left: 0;
+    }
+
+    .header-buttons {
+        gap: 0.5em;
+    }
     
     .button, .button-outlined {
-        width: 8em;
+        width: 7em;
+        padding: auto;
     }
 }
