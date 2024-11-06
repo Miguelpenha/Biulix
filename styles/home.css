@@ -104,7 +104,6 @@ body {
     padding: 0.5em;
     position: absolute;
     border-radius: 50%;
-    fill: var(--colors-color);
     border: 4px solid var(--colors-color);
     background-color: var(--colors-primary);
 }
@@ -175,13 +174,7 @@ body {
     height: auto;
     padding: 0.3em;
     border-radius: 50%;
-    fill: var(--colors-primary);
     background-color: var(--colors-background-tertiary);
-}
-
-.vacancy-icon-login {
-    padding: 0.5em;
-    fill: var(--colors-color);
 }
 
 .vacancy-company {
