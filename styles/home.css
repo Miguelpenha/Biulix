@@ -36,7 +36,7 @@ body {
 }
 
 .initial-content {
-    width: 35em;
+    width: 28em;
     display: flex;
 }
 
@@ -46,12 +46,12 @@ body {
 
 .initial-description {
     margin-top: 1em;
-    line-height: 1.5em;
+    line-height: 1.2em;
     font-size: var(--fonts-size-description);
 }
 
 .initial-button {
-    margin-top: 1.5em;
+    margin-top: 3.5em;
 }
 
 .initial-button-text {
@@ -61,15 +61,14 @@ body {
 .options {
     gap: 3em;
     display: flex;
-    padding: 0 5%;
     align-items: flex-end;
     justify-content: center;
 }
 
 .option {
-    width: 100%;
+    width: 130%;
     display: flex;
-    max-width: 22em;
+    max-width: 24em;
     padding: 3em 1em;
     position: relative;
     border-radius: 15px;
@@ -125,8 +124,8 @@ body {
 
 .vacancies-title {
     display: flex;
-    font-size: var(--fonts-size-title);
     color: var(--colors-color-secondary);
+    font-size: var(--fonts-size-main-title);
 }
 
 .vacancies-list {
@@ -291,11 +290,11 @@ body {
     .initial-container {
         width: 90%;
         padding: 0;
-        margin-top: 10em;
+        margin-top: 7em;
     }
 
     .initial-content {
-        width: 60%;
+        width: 50%;
     }
 
     .options {
@@ -303,6 +302,7 @@ body {
     }
 
     .option {
+        width: 120%;
         padding: 2em 1em;
     }
 

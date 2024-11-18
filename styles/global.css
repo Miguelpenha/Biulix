@@ -38,10 +38,10 @@
 header {
     width: 80%;
     z-index: 1;
-    padding: 1em;
     display: flex;
     position: fixed;
     margin-top: 1em;
+    padding: 0.5em 1em;
     align-self: center;
     border-radius: 50px;
     flex-direction: row;
