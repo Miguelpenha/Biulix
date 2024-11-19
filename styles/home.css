@@ -30,13 +30,14 @@ body {
     margin: auto;
     display: flex;
     padding: 0 1em;
+    max-width: 100em;
     margin-top: 12em;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .initial-content {
-    width: 28em;
+    width: 35vw;
     display: flex;
 }
 
@@ -163,13 +164,13 @@ body {
 }
 
 .vacancy-image {
-    width: 4em;
+    width: 3em;
     height: auto;
     border-radius: 50%;
 }
 
 .vacancy-icon {
-    width: 4em;
+    width: 3em;
     height: auto;
     padding: 0.3em;
     border-radius: 50%;
@@ -274,7 +275,7 @@ body {
 
 @media screen and (max-width: 900px) {
     .initial {
-        height: 100vh;
+        height: 85vh;
     }
     
     .initial-image.desktop {

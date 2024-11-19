@@ -41,6 +41,7 @@ header {
     display: flex;
     position: fixed;
     margin-top: 1em;
+    max-width: 100em;
     padding: 0.5em 1em;
     align-self: center;
     border-radius: 50px;
@@ -158,6 +159,8 @@ body {
 footer {
     padding: 1em;
     display: flex;
+    max-width: 100em;
+    align-self: center;
     background-color: var(--colors-background);
 }
 
