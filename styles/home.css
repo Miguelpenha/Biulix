@@ -5,7 +5,7 @@ body {
 }
 
 .initial {
-    height: 40em;
+    height: 45em;
     display: flex;
     position: relative;
     flex-direction: row;
@@ -42,13 +42,14 @@ body {
 }
 
 .initial-title {
+    line-height: 1em;
     font-size: var(--fonts-size-main-title);
 }
 
 .initial-description {
     margin-top: 1em;
-    line-height: 1.2em;
-    font-size: var(--fonts-size-description);
+    line-height: 1.5em;
+    font-size: var(--fonts-size-subtitle);
 }
 
 .initial-button {
@@ -67,12 +68,12 @@ body {
 }
 
 .option {
-    width: 130%;
+    width: 160%;
     display: flex;
     max-width: 24em;
     padding: 3em 1em;
     position: relative;
-    border-radius: 15px;
+    border-radius: 10px;
     align-items: center;
     text-decoration: none;
     transition-duration: 0.2s;
@@ -87,7 +88,7 @@ body {
 .option-title {
     font-weight: bold;
     text-align: center;
-    font-size: var(--fonts-size-subtitle);
+    font-size: var(--fonts-size-title);
     color: var(--colors-color-secondary);
 }
 
@@ -110,7 +111,7 @@ body {
 
 .vacancies {
     display: flex;
-    padding-top: 3em;
+    padding-top: 4em;
     margin-bottom: 3em;
     align-items: center;
     background-color: var(--colors-background);
@@ -132,8 +133,8 @@ body {
 .vacancies-list {
     gap: 2.5em;
     display: flex;
-    margin-top: 2em;
     flex-wrap: wrap;
+    margin-top: 4em;
     flex-direction: row;
     justify-content: center;
 }
@@ -141,12 +142,12 @@ body {
 .vacancy {
     width: 90%;
     display: flex;
-    padding: 1.5em;
-    max-width: 25em;
+    padding: 1.8em;
+    max-width: 23.5em;
     align-self: center;
     position: relative;
-    border-radius: 20px;
-    box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
     background-color: var(--colors-background-secondary);
 }
 
@@ -158,19 +159,19 @@ body {
 }
 
 .vacancy-header-login {
-    padding: 1em;
-    border-radius: 20px;
+    padding: 0.5em;
+    border-radius: 10px;
     background-color: var(--colors-background);
 }
 
 .vacancy-image {
-    width: 3em;
+    width: 3.7em;
     height: auto;
     border-radius: 50%;
 }
 
 .vacancy-icon {
-    width: 3em;
+    width: 3.7em;
     height: auto;
     padding: 0.3em;
     border-radius: 50%;
@@ -183,14 +184,14 @@ body {
 
 .vacancy-company-name {
     font-weight: bold;
+    font-size: var(--fonts-size-subtitle);
     color: var(--colors-color-secondary);
-    font-size: var(--fonts-size-description);
 }
 
 .vacancy-location {
     font-weight: bold;
+    font-size: var(--fonts-size-subtitle);
     color: var(--colors-color-secondary);
-    font-size: var(--fonts-size-description);
 }
 
 .vacancy-total-candidates {
@@ -214,8 +215,9 @@ body {
 }
 
 .vacancy-text-login {
+    line-height: 1em;
     font-weight: bold;
-    font-size: var(--fonts-size-description);
+    font-size: var(--fonts-size-subtitle);
     color: var(--colors-background-tertiary);
 }
 
@@ -253,6 +255,7 @@ body {
 }
 
 .vacancy-button {
+    width: 11em;
     margin-top: 1em;
     align-self: center;
 }
@@ -275,7 +278,7 @@ body {
 
 @media screen and (max-width: 900px) {
     .initial {
-        height: 85vh;
+        height: 25em;
     }
     
     .initial-image.desktop {
@@ -291,11 +294,20 @@ body {
     .initial-container {
         width: 90%;
         padding: 0;
-        margin-top: 7em;
+        margin-top: 6em;
     }
 
     .initial-content {
         width: 50%;
+    }
+
+    .initial-description {
+        line-height: 1.2em;
+        font-size: var(--fonts-size-description);
+    }
+
+    .initial-button {
+        margin-top: 2em;
     }
 
     .options {
@@ -304,7 +316,7 @@ body {
 
     .option {
         width: 120%;
-        padding: 2em 1em;
+        padding: 1.8em 1em;
     }
 
     .option-title, .option-subtitle {
@@ -316,12 +328,37 @@ body {
         height: 2.5em;
     }
 
+    .vacancies {
+        padding-top: 2em;
+    }
+
+    .vacancies-subtitle {
+        font-size: var(--fonts-size-description);
+    }
+
+    .vacancies-list {
+        margin-top: 2em;
+    }
+
+    .vacancy {
+        padding: 0.8em;
+    }
+    
     .vacancy-header {
         width: 80%;
     }
-
+    
+    .vacancy-company-name, .vacancy-location {
+        font-size: var(--fonts-size-description);
+    }
+    
     .vacancy-image, .vacancy-icon {
-        width: 3em;
+        width: 2.8em;
+    }
+
+    .vacancy-text-login {
+        width: 90%;
+        font-size: var(--fonts-size-description);
     }
 
     .vacancy-title {
@@ -329,14 +366,16 @@ body {
     }
 
     .vacancy-button {
-        margin-top: 2em;
+        width: 9em;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
     }
 
     .vacancy-pcd-icon {
         left: auto;
-        top: 2.5em;
-        right: 1.5em;
-        width: 2.5em;
+        top: 1.8em;
+        width: 2em;
+        right: 1em;
         height: auto;
         bottom: 1.5em;
     }
