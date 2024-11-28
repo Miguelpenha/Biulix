@@ -11,10 +11,10 @@
 
     /* Fonts */
     --fonts-family: 'Aptos';
-    --fonts-size-title: 2.2em;
+    --fonts-size-title: 2.4em;
     --fonts-size-small: 1.2em;
-    --fonts-size-subtitle: 1.4em;
-    --fonts-size-description: 1em;
+    --fonts-size-subtitle: 1.5em;
+    --fonts-size-description: 0.9em;
     --fonts-size-main-title: 3.25em;
 }
 
@@ -74,13 +74,14 @@ header {
     width: 9em;
     display: flex;
     font-weight: bold;
-    flex-direction: row;
     align-items: center;
     border-radius: 30px;
+    flex-direction: row;
     padding: 0.6em 0.3em;
     text-decoration: none;
     justify-content: center;
     transition-duration: 0.2s;
+    border: 2px solid var(--colors-primary);
     transition-timing-function: linear;
     font-size: var(--fonts-size-description);
     background-color: var(--colors-primary);
@@ -216,11 +217,12 @@ footer {
 }
 
 .footer-text {
+    font-weight: 100;
     font-size: var(--fonts-size-small);
 }
 
 .footer-text-highlighted {
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .download {
@@ -232,7 +234,7 @@ footer {
 }
 
 .download-title {
-    font-weight: bold;
+    font-weight: 900;
     font-size: var(--fonts-size-subtitle);
 }
 
@@ -246,9 +248,9 @@ footer {
 .download-button {
     gap: 1em;
     height: 3em;
-    width: 10.5em;
+    width: 12.5em;
     display: flex;
-    padding: 1.7em;
+    padding: 1.5em;
     position: relative;
     align-items: center;
     flex-direction: row;
@@ -265,7 +267,7 @@ footer {
 }
 
 .download-image {
-    left: 0.5em;
+    left: 0.3em;
     width: 2.5em;
     height: auto;
     position: absolute;
@@ -273,14 +275,14 @@ footer {
 }
 
 .borderless-download-image {
+    width: 2em;
     left: 1.3em;
-    width: 1.8em;
     border-radius: 0%;
 }
 
 .download-text {
-    font-weight: bold;
-    margin-left: 1.5em;
+    margin-left: 3em;
+    font-weight: 900;
     color: var(--colors-color-secondary);
     font-size: var(--fonts-size-description);
 }
@@ -288,13 +290,13 @@ footer {
 .footer-address {
     display: flex;
     margin: 2em 0;
+    font-size: 1em;
     align-items: center;
-    font-size: var(--fonts-size-small);
 }
 
 .footer-address-text {
+    font-size: 1em;
     text-align: center;
-    font-size: var(--fonts-size-small);
     color: var(--colors-color-secondary);
 }
 
@@ -386,5 +388,9 @@ footer {
 
     .download-text {
         margin-left: 2.8em;
+    }
+
+    .footer-address, .footer-address-text {
+        font-size: 0.7em;
     }
 }

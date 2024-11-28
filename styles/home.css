@@ -37,7 +37,7 @@ body {
 }
 
 .initial-content {
-    width: 35vw;
+    width: 40vw;
     display: flex;
 }
 
@@ -119,7 +119,7 @@ body {
 
 .vacancies-subtitle {
     display: flex;
-    font-weight: bold;
+    font-weight: 900;
     color: var(--colors-primary);
     font-size: var(--fonts-size-subtitle);
 }
@@ -183,13 +183,13 @@ body {
 }
 
 .vacancy-company-name {
-    font-weight: bold;
+    font-weight: 900;
     font-size: var(--fonts-size-subtitle);
     color: var(--colors-color-secondary);
 }
 
 .vacancy-location {
-    font-weight: bold;
+    font-weight: 900;
     font-size: var(--fonts-size-subtitle);
     color: var(--colors-color-secondary);
 }
@@ -200,7 +200,7 @@ body {
 }
 
 .vacancy-total-candidates-highlighted {
-    font-weight: bold;
+    font-weight: 900;
     color: var(--colors-color-secondary);
 }
 
@@ -210,13 +210,13 @@ body {
 }
 
 .vacancy-payment-highlighted {
-    font-weight: bold;
+    font-weight: 900;
     color: var(--colors-color-secondary);
 }
 
 .vacancy-text-login {
     line-height: 1em;
-    font-weight: bold;
+    font-weight: 900;
     font-size: var(--fonts-size-subtitle);
     color: var(--colors-background-tertiary);
 }
@@ -227,7 +227,7 @@ body {
 }
 
 .vacancy-title {
-    font-weight: bold;
+    font-weight: 900;
     font-size: var(--fonts-size-subtitle);
     color: var(--colors-color-secondary);
 }
@@ -245,7 +245,7 @@ body {
 }
 
 .vacancy-education-highlighted {
-    font-weight: bold;
+    font-weight: 900;
     color: var(--colors-color-secondary);
 }
 
@@ -330,6 +330,10 @@ body {
 
     .vacancies {
         padding-top: 2em;
+    }
+
+    .vacancy-title {
+        font-size: var(--fonts-size-title);
     }
 
     .vacancies-subtitle {
