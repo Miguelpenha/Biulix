@@ -1,0 +1,17 @@
+@import url(global.css);
+
+body {
+    background-image: url('../public/img/background-desktop.jpg');
+}
+
+#form {
+    align-self: center;
+}
+
+.title-form {
+    font-size: var(--fonts-size-subtitle);
+}
+
+@media screen and (max-width: 900px) {
+
+}
