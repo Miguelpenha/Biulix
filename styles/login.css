@@ -5,11 +5,86 @@ body {
 }
 
 #form {
+    width: 45em;
+    padding: 2em 4em;
+    display: flex;
+    margin-top: 14em;
     align-self: center;
+    border-radius: 15px;
+    background-color: red;
 }
 
 .title-form {
-    font-size: var(--fonts-size-subtitle);
+    align-self: center;
+    font-size: var(--fonts-size-title);
+}
+
+.types {
+    gap: 0.5em;
+    display: flex;
+    margin-top: 3em;
+}
+
+.types-type {
+    gap: 1em;
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fonts-size-small);
+}
+
+.fields {
+    gap: 2em;
+    display: flex;
+    margin-top: 3em;
+}
+
+.fields-field, .fields-container-field {
+    width: 100%;
+    border: none;
+    align-self: center;
+    padding: 1em 1.2em;
+    border-radius: 30px;
+    background-color: transparent;
+    font-size: var(--fonts-size-small);
+    border: 1px solid var(--colors-background-secondary);
+}
+
+.fields-field::placeholder, .fields-field-input::placeholder {
+    color: var(--colors-background-secondary);
+}
+
+.fields-field:focus, .fields-field-input:focus {
+    outline: none;
+}
+
+.fields-container-field {
+    padding: 0;
+    display: flex;
+    position: relative;
+}
+
+.fields-field-input {
+    width: 80%;
+    border: none;
+    padding: 0.7em 0.9em;
+    background-color: transparent;
+    font-size: var(--fonts-size-small);
+}
+
+.button-visibility {
+    right: 3%;
+    width: 2em;
+    top: 30%;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    background-color: transparent;
+}
+
+.button-visibility-icon {
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 900px) {
