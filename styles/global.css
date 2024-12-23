@@ -168,6 +168,11 @@ footer {
     background-image: linear-gradient(var(--colors-background), var(--colors-gradient));
 }
 
+.footer-secondary {
+    background: none;
+    background-image: linear-gradient(var(--colors-primary), var(--colors-gradient));
+}
+
 .footer-content {
     width: 80%;
     display: flex;
@@ -178,6 +183,10 @@ footer {
     border-radius: 15px;
     flex-direction: row;
     background-color: var(--colors-primary);
+}
+
+.footer-content-secondary {
+    background-color: var(--colors-background-secondary);
 }
 
 .social {
@@ -199,6 +208,10 @@ footer {
     background-color: var(--colors-background);
 }
 
+.social-icon-container-secondary {
+    background-color: var(--colors-primary);
+}
+
 .social-icon-container:hover {
     transform: scale(1.1);
 }
@@ -206,7 +219,6 @@ footer {
 .social-icon {
     width: 100%;
     height: 100%;
-    color: var(--colors-primary);
 }
 
 .footer-texts {
@@ -221,8 +233,16 @@ footer {
     font-size: var(--fonts-size-small);
 }
 
+.footer-text-secondary {
+    color: var(--colors-color-secondary);
+}
+
 .footer-text-highlighted {
     font-weight: 900;
+}
+
+.footer-text-highlighted-secondary {
+    color: var(--colors-color-secondary);
 }
 
 .download {
@@ -236,6 +256,10 @@ footer {
 .download-title {
     font-weight: 900;
     font-size: var(--fonts-size-subtitle);
+}
+
+.download-title-secondary {
+    color: var(--colors-color-secondary);
 }
 
 .download-buttons {
@@ -264,6 +288,10 @@ footer {
 
 .download-button:hover {
     transform: scale(1.1);
+}
+
+.download-button-secondary {
+    border: 2px solid var(--colors-primary);
 }
 
 .download-image {

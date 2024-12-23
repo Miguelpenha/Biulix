@@ -6,9 +6,9 @@ body {
 
 #form {
     width: 45em;
-    padding: 2em 4em;
     display: flex;
     margin-top: 14em;
+    padding: 2em 4em;
     align-self: center;
     border-radius: 15px;
     background-color: red;

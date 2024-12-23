@@ -1,0 +1,54 @@
+@import url(global.css);
+
+body {
+    background-image: url('../public/img/background-desktop.jpg');
+}
+
+.texts {
+    width: 80%;
+    padding: 4em;
+    display: flex;
+    margin-top: 20vh;
+    align-self: center;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+}
+
+.texts-title {
+    align-self: center;
+    margin-bottom: 1em;
+    color: var(--colors-primary);
+    font-size: var(--fonts-size-title);
+}
+
+.texts-paragraph {
+    color: #000000;
+    font-size: var(--fonts-size-small);
+}
+
+.list-item {
+    color: #000000;
+    margin-left: 1em;
+    font-size: var(--fonts-size-small);
+}
+
+@media screen and (max-width: 900px) {
+    .texts {
+        width: 90%;
+        padding: 1em;
+        margin-top: 15vh;
+        border-radius: 15px;
+    }
+
+    .texts-title {
+        font-size: var(--fonts-size-description);
+    }
+
+    .texts-paragraph {
+        font-size: var(--fonts-size-description);
+    }
+    
+    .list-item {
+        font-size: var(--fonts-size-description);
+    }
+}
