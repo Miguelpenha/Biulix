@@ -81,10 +81,10 @@ header {
     text-decoration: none;
     justify-content: center;
     transition-duration: 0.2s;
-    border: 2px solid var(--colors-primary);
     transition-timing-function: linear;
     font-size: var(--fonts-size-description);
     background-color: var(--colors-primary);
+    border: 2px solid var(--colors-primary);
 }
 
 .button:hover {
@@ -170,7 +170,7 @@ footer {
 
 .footer-secondary {
     background: none;
-    background-image: linear-gradient(var(--colors-primary), var(--colors-gradient));
+    background-image: linear-gradient(transparent, var(--colors-gradient));
 }
 
 .footer-content {

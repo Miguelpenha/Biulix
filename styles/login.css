@@ -1,20 +1,26 @@
 @import url(global.css);
 
 body {
-    background-image: url('../public/img/background-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../public/img/background-mobile.jpg');
 }
 
 #form {
-    width: 45em;
+    width: 90%;
     display: flex;
-    margin-top: 14em;
+    max-width: 45em;
+    margin-top: 12em;
     padding: 2em 4em;
     align-self: center;
     border-radius: 15px;
-    background-color: red;
+    margin-bottom: 1.5em;
+    border: 1px solid var(--colors-background-secondary);
 }
 
 .title-form {
+    margin-top: 0.5em;
     align-self: center;
     font-size: var(--fonts-size-title);
 }
@@ -22,7 +28,7 @@ body {
 .types {
     gap: 0.5em;
     display: flex;
-    margin-top: 3em;
+    margin-top: 5em;
 }
 
 .types-type {
@@ -40,6 +46,7 @@ body {
 
 .fields-field, .fields-container-field {
     width: 100%;
+    height: 10vh;
     border: none;
     align-self: center;
     padding: 1em 1.2em;
@@ -61,6 +68,7 @@ body {
     padding: 0;
     display: flex;
     position: relative;
+    justify-content: center;
 }
 
 .fields-field-input {
@@ -72,9 +80,9 @@ body {
 }
 
 .button-visibility {
+    top: 30%;
     right: 3%;
     width: 2em;
-    top: 30%;
     border: none;
     display: flex;
     cursor: pointer;
@@ -87,6 +95,88 @@ body {
     height: auto;
 }
 
-@media screen and (max-width: 900px) {
+.form-remember {
+    gap: 0.5em;
+    display: flex;
+    margin-top: 3em;
+    flex-direction: row;
+}
 
+.form-remember-input {
+    width: 1.5em;
+}
+
+.form-remember-label {
+    font-size: var(--fonts-size-small);
+}
+
+.form-button {
+    width: 100%;
+    padding: 1em;
+    cursor: pointer;
+    margin-top: 1.5em;
+    border-radius: 50px;
+    margin-bottom: 1.5em;
+    font-size: var(--fonts-size-subtitle);
+}
+
+.form-text {
+    align-self: center;
+    margin-bottom: 0.2em;
+    font-size: var(--fonts-size-small);
+}
+
+.form-link {
+    font-weight: 900;
+    align-self: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    #form {
+        padding: 2em;
+        margin-top: 6em;
+    }
+
+    .title-form {
+        margin-top: 0;
+        font-size: var(--fonts-size-subtitle);
+    }
+
+    .types {
+        margin-top: 1.5em;
+    }
+
+    .fields {
+        gap: 1em;
+        margin-top: 1em;
+    }
+
+    .fields-field, .fields-container-field {
+        height: 7vh;
+        padding: 0.6em 0.8em;
+        font-size: var(--fonts-size-description);
+    }
+
+    .fields-container-field {
+        padding: 0;
+    }
+
+    .fields-field-input {
+        padding: 0.6em 0.8em;
+        font-size: var(--fonts-size-description);
+    }
+
+    .form-remember {
+        gap: 0.2em;
+        margin-top: 2em;
+    }
+
+    .form-button {
+        font-size: var(--fonts-size-description);
+    }
+
+    .form-text {
+        font-size: var(--fonts-size-description);
+    }
 }
