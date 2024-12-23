@@ -1,7 +1,10 @@
 @import url(global.css);
 
 body {
-    background-image: url('../public/img/background-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../public/img/background-mobile.jpg');
 }
 
 .texts {
