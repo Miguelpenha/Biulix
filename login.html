@@ -40,6 +40,23 @@
         <!-- Google Tag Manager (noscript) -->
         
         <!-- End Google Tag Manager (noscript) -->
+        <script>
+            function changeVisibility() {
+                const inputPassword = window.document.getElementById('password')
+                
+                if (inputPassword.getAttribute('type') === 'password') {
+                    inputPassword.setAttribute('type', 'text')
+                } else {
+                    inputPassword.setAttribute('type', 'password')
+                }
+
+                const iconDefault = window.document.querySelector('.button-visibility-icon')
+                const iconHidden = window.document.querySelector('.button-visibility-icon-hidden')
+
+                iconDefault.className = 'button-visibility-icon-hidden'
+                iconHidden.className = 'button-visibility-icon'
+            }
+        </script>
         <header>
             <img class="header-logo" src="public/img/Logo Biulix.png" alt="Logo Biulix">
         </header>
@@ -68,8 +85,9 @@
                     <input class="fields-field" type="text" name="email" id="email" placeholder="E-mail ou CPF">
                     <div class="fields-container-field">
                         <input class="fields-field-input" type="password" name="password" id="password" placeholder="Senha">
-                        <button class="button-visibility">
+                        <button onclick="changeVisibility()" type="button" class="button-visibility">
                             <img class="button-visibility-icon" src="public/img/icons/visibility.svg" alt="Ícone de visão">
+                            <img class="button-visibility-icon-hidden" src="public/img/icons/visibility-off.svg" alt="Ícone de visão">
                         </button>
                     </div>
                 </div>

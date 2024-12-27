@@ -95,6 +95,10 @@ body {
     height: auto;
 }
 
+.button-visibility-icon-hidden {
+    display: none;
+}
+
 .form-remember {
     gap: 0.5em;
     display: flex;
