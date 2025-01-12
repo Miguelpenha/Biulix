@@ -59,6 +59,21 @@ header {
     align-self: center;
 }
 
+.header-options {
+    gap: 2.5em;
+    display: flex;
+    margin-left: auto;
+    margin-right: 3em;
+    align-self: center;
+    flex-direction: row;
+}
+
+.header-option {
+    text-decoration: none;
+    font-size: var(--fonts-size-small);
+    color: var(--colors-color-secondary);
+}
+
 .header-buttons {
     gap: 1em;
     display: flex;
@@ -68,6 +83,10 @@ header {
     align-items: center;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+.header-buttons-with-options {
+    margin-left: 0;
 }
 
 .button {
