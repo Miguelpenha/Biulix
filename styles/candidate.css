@@ -1,7 +1,7 @@
 @import url(global.css);
 
 .initial {
-    height: 54em;
+    height: 50em;
     display: flex;
     position: relative;
     flex-direction: row;
@@ -39,23 +39,25 @@
 
 .initial-title {
     line-height: 1em;
-    color: var(--colors-primary);
+    color: var(--colors-color);
     font-size: var(--fonts-size-main-title);
 }
 
 .initial-description {
     margin-top: 1em;
     line-height: 1.5em;
+    color: var(--colors-color);
     font-size: var(--fonts-size-subtitle);
-    color: var(--colors-color-secondary);
 }
 
 .initial-button {
+    border: none;
     margin-top: 3.5em;
 }
 
 .initial-button-text {
     margin: auto;
+    color: var(--colors-color-secondary);
 }
 
 .initial-features {
@@ -64,7 +66,7 @@
     margin-top: 2em;
     padding-top: 1em;
     flex-direction: row;
-    border-top: 1px solid var(--colors-primary);
+    border-top: 1px solid var(--colors-color);
 }
 
 .initial-feature {
@@ -80,8 +82,8 @@
 
 .initial-feature-text {
     font-weight: bold;
+    color: var(--colors-color-color);
     font-size: var(--fonts-size-small);
-    color: var(--colors-color-secondary);
 }
 
 .about {
@@ -113,6 +115,7 @@
 
 .about-subtitle {
     font-weight: bold;
+    color: var(--colors-primary);
     font-size: var(--fonts-size-subtitle);
 }
 
@@ -120,22 +123,38 @@
     margin-top: 0.2em;
     font-weight: bold;
     font-size: var(--fonts-size-title);
+    color: var(--colors-color-secondary);
 }
 
 .about-text {
     font-size: var(--fonts-size-small);
+    color: var(--colors-color-secondary);
 }
 
 .how {
     display: flex;
-    background-color: var(--colors-background-secondary);
+    position: relative;
+}
+
+.how-image {
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    object-position: center;
+}
+
+.how-image.mobile {
+    display: none;
+    visibility: hidden;
 }
 
 .how-title {
     margin-top: 1em;
     align-self: center;
     text-align: center;
-    color: var(--colors-primary);
+    color: var(--colors-color);
     font-size: var(--fonts-size-main-title);
 }
 
@@ -178,14 +197,181 @@
     font-weight: bold;
     margin-top: 0.5em;
     text-align: center;
-    color: var(--colors-primary);
+    color: var(--colors-color);
     font-size: var(--fonts-size-subtitle);
 }
 
 .how-feature-description {
     text-align: center;
+    color: var(--colors-color);
     font-size: var(--fonts-size-small);
+}
+
+.vacancies {
+    display: flex;
+    padding-top: 4em;
+    align-items: center;
+    padding-bottom: 4em;
+    background-color: var(--colors-background);
+}
+
+.vacancies-subtitle {
+    display: flex;
+    font-weight: 900;
+    color: var(--colors-primary);
+    font-size: var(--fonts-size-subtitle);
+}
+
+.vacancies-title {
+    display: flex;
     color: var(--colors-color-secondary);
+    font-size: var(--fonts-size-main-title);
+}
+
+.vacancies-list {
+    gap: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4em;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.vacancy {
+    width: 90%;
+    display: flex;
+    padding: 1.8em;
+    max-width: 23.5em;
+    align-self: center;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+    background-color: var(--colors-background-secondary);
+}
+
+.vacancy-header {
+    gap: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.vacancy-header-login {
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: var(--colors-background);
+}
+
+.vacancy-image {
+    width: 3.7em;
+    height: auto;
+    border-radius: 50%;
+}
+
+.vacancy-icon {
+    width: 3.7em;
+    height: auto;
+    padding: 0.3em;
+    border-radius: 50%;
+    background-color: var(--colors-background-tertiary);
+}
+
+.vacancy-company {
+    display: flex;
+}
+
+.vacancy-company-name {
+    font-weight: 900;
+    font-size: var(--fonts-size-subtitle);
+    color: var(--colors-color-secondary);
+}
+
+.vacancy-location {
+    font-weight: 900;
+    font-size: var(--fonts-size-subtitle);
+    color: var(--colors-color-secondary);
+}
+
+.vacancy-total-candidates {
+    color: var(--colors-color-secondary);
+    font-size: var(--fonts-size-description);
+}
+
+.vacancy-total-candidates-highlighted {
+    font-weight: 900;
+    color: var(--colors-color-secondary);
+}
+
+.vacancy-payment {
+    color: var(--colors-color-secondary);
+    font-size: var(--fonts-size-description);
+}
+
+.vacancy-payment-highlighted {
+    font-weight: 900;
+    color: var(--colors-color-secondary);
+}
+
+.vacancy-text-login {
+    line-height: 1em;
+    font-weight: 900;
+    font-size: var(--fonts-size-subtitle);
+    color: var(--colors-background-tertiary);
+}
+
+.vacancy-content {
+    display: flex;
+    margin-top: 1em;
+}
+
+.vacancy-title {
+    font-weight: 900;
+    font-size: var(--fonts-size-subtitle);
+    color: var(--colors-color-secondary);
+}
+
+.vacancy-profile {
+    font-style: italic;
+    color: var(--colors-color-secondary);
+    font-size: var(--fonts-size-description);
+}
+
+.vacancy-education {
+    margin: 0.4em 0;
+    color: var(--colors-color-secondary);
+    font-size: var(--fonts-size-description);
+}
+
+.vacancy-education-highlighted {
+    font-weight: 900;
+    color: var(--colors-color-secondary);
+}
+
+.vacancy-description {
+    color: var(--colors-color-secondary);
+    font-size: var(--fonts-size-description);
+}
+
+.vacancy-button {
+    width: 11em;
+    margin-top: 1em;
+    align-self: center;
+}
+
+.vacancy-pcd-icon {
+    left: 1.5em;
+    width: 3.2em;
+    height: auto;
+    bottom: 1.5em;
+    position: absolute;
+}
+
+.vacancies-button {
+    margin-top: 2.5em;
+}
+
+.vacancies-button-text{
+    margin: auto;
 }
 
 .plans {
@@ -302,6 +488,16 @@
         visibility: visible;
     }
 
+    .how-image.mobile {
+        display: block;
+        visibility: visible;
+    }
+
+    .about-image.desktop {
+        display: none;
+        visibility: hidden;
+    }
+
     .how-title {
         margin-top: 2em;
     }
@@ -327,6 +523,62 @@
 
     .how-feature-description {
         font-size: var(--fonts-size-description);
+    }
+
+    .vacancies {
+        padding-top: 2em;
+    }
+
+    .vacancy-title {
+        font-size: var(--fonts-size-title);
+    }
+
+    .vacancies-subtitle {
+        font-size: var(--fonts-size-description);
+    }
+
+    .vacancies-list {
+        margin-top: 2em;
+    }
+
+    .vacancy {
+        padding: 0.8em;
+    }
+    
+    .vacancy-header {
+        width: 80%;
+    }
+    
+    .vacancy-company-name, .vacancy-location {
+        font-size: var(--fonts-size-description);
+    }
+    
+    .vacancy-image, .vacancy-icon {
+        width: 2.8em;
+    }
+
+    .vacancy-text-login {
+        width: 90%;
+        font-size: var(--fonts-size-description);
+    }
+
+    .vacancy-title {
+        font-size: var(--fonts-size-description);
+    }
+
+    .vacancy-button {
+        width: 9em;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .vacancy-pcd-icon {
+        left: auto;
+        top: 1.8em;
+        width: 2em;
+        right: 1em;
+        height: auto;
+        bottom: 1.5em;
     }
 
     .plans-image.mobile {

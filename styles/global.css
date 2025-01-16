@@ -165,8 +165,11 @@ header {
     padding: 0.5em;
     margin-left: auto;
     border-radius: 50%;
-    fill: var(--colors-primary);
     background-color: var(--colors-color);
+}
+
+.button-icon-arrow-secondary {
+    background-color: var(--colors-primary);
 }
 
 main {
