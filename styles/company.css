@@ -128,7 +128,7 @@
 
 .how {
     display: flex;
-    background-color: var(--colors-background-tertiary);
+    background-color: var(--colors-background-secondary);
 }
 
 .how-title {
