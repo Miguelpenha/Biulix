@@ -4,13 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/home.css">
-        <title>Biulix</title>
+        <link rel="stylesheet" href="styles/candidate/index.css">
+        <title>Biulix - Candidato</title>
         <meta name="language" content="pt-BR">
         <meta property="og:type" content="website">
         <meta property="og:title" content="Biulix">
         <meta property="og:description" content="Conectando talentos e oportunidades!">
-        <meta property="og:image" content="https://biulix.vercel.app/public/img/thumbnail.png">
+        <meta property="og:image" content="https://biulix.vercel.app/public/img/thumbnail-candidate.png">
         <meta property="og:url" content="https://biulix.vercel.app">
         <meta property="og:site_name" content="Biulix"/>
         <meta property="fb:admins" content="biulix"/>
@@ -18,7 +18,7 @@
         <meta name="twitter:url" content="https://biulix.vercel.app">
         <meta name="twitter:title" content="Biulix">
         <meta name="twitter:description" content="Conectando talentos e oportunidades!">
-        <meta name="twitter:image" content="https://biulix.vercel.app/public/img/thumbnail.png">
+        <meta name="twitter:image" content="https://biulix.vercel.app/public/img/thumbnail-candidate.png">
         <meta name="author" content="Avel Digital">
         <meta name="creator" content="Avel Digital">
         <meta name="publisher" content="Avel Digital">
@@ -42,47 +42,126 @@
         <!-- End Google Tag Manager (noscript) -->
         <header>
             <img class="header-logo" src="public/img/Logo Biulix.png" alt="Logo Biulix">
-            <div class="header-buttons">
+            <div class="header-type">Candidato</div>
+            <div class="header-options">
+                <a class="header-option" href="/sobre">Sobre nós</a>
+                <a class="header-option" href="#how">Como Funciona</a>
+                <a class="header-option" href="/candidato/vagas">Buscar Vagas</a>
+                <a class="header-option" href="/candidato/planos">Planos</a>
+            </div>
+            <div class="header-buttons header-buttons-with-options">
                 <a href="#" class="button-outlined">Abrir Conta</a>
                 <a href="/login" class="button">Fazer Login</a>
             </div>
         </header>
         <main>
             <div class="initial">
-                <img class="initial-image desktop" src="public/img/background-desktop.jpg" alt="Imagem de fundo">
-                <img class="initial-image mobile" src="public/img/background-mobile.jpg" alt="Imagem de fundo">
+                <img class="initial-image desktop" src="public/img/candidate/initial-desktop.png" alt="Imagem de fundo">
+                <img class="initial-image mobile" src="public/img/candidate/initial-mobile.png" alt="Imagem de fundo">
                 <div class="initial-container">
                     <div class="initial-content">
                         <h1 class="initial-title">Conectando talentos e oportunidades!</h1>
                         <span class="initial-description">
-                            Rede de empregos que facilita seus objetivos
+                            Veja as opções dos planos
                             <br/>
-                            Aqui muitas empresas publicam suas vagas de empregos
+                            Abra sua conta gratuitamente
                             <br/>
-                            E os candidatos encontram as melhores oportunidades
+                            Busque pelas vagas publicadas
                             <br/>
-                            É aqui que conectamos talentos e negócios.
+                            Compartilhe com seus amigos
+                            <br/>
+                            Candidate-se nas vagas de seu interesse
+                            <br/>
+                            Aumente suas chances de recolocação profissional
                         </span>
-                        <a href="/candidato/vagas" class="button-outlined-secondary initial-button icon-button">
-                            <span class="initial-button-text">Buscar Vagas</span>
-                            <img class="button-icon-arrow" src="public/img/icons/right-blue.svg" alt="ícone Right Blue">
+                        <a href="#" class="button-outlined initial-button icon-button">
+                            <span class="initial-button-text">Saber Mais</span>
+                            <img class="button-icon-arrow button-icon-arrow-secondary" src="public/img/icons/right-white.svg" alt="ícone Arrow">
                         </a>
                     </div>
-                    <div class="options">
-                        <a href="/candidato" class="option">
-                            <span class="option-title">Sou Candidato</span>
-                            <span class="option-subtitle">procuro emprego</span>
-                            <img class="option-icon" src="public/img/icons/right-white.svg" alt="ícone Right White">
-                        </a>
-                        <a href="/empresa" class="option">
-                            <span class="option-title">Sou Empregador</span>
-                            <span class="option-subtitle">quero publicar vagas</span>
-                            <img class="option-icon" src="public/img/icons/right-white.svg" alt="ícone Right White">
-                        </a>
+                    <div class="initial-features">
+                        <div class="initial-feature">
+                            <img class="initial-feature-icon" src="public/img/icons/find.png" alt="ícone Feature">
+                            <span class="initial-feature-text">Amplie suas oportunidades</span>
+                        </div>
+                        <div class="initial-feature">
+                            <img class="initial-feature-icon" src="public/img/icons/medal.png" alt="ícone Feature">
+                            <span class="initial-feature-text">Candidate-se nos processos seletivos</span>
+                        </div>
+                        <div class="initial-feature">
+                            <img class="initial-feature-icon" src="public/img/icons/coin.png" alt="ícone Feature">
+                            <span class="initial-feature-text">Melhor custo-benefício</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="vacancies">
+            <div class="about" id="about">
+                <img class="about-image-desktop" src="public/img/candidate/about-desktop.png" alt="Imagem About">
+                <img class="about-image-mobile" src="public/img/candidate/about-mobile.png" alt="Imagem About">
+                <div class="about-content">
+                    <span class="about-subtitle">SOBRE NÓS</span>
+                    <h3 class="about-title">Conectamos candidatos às vagas de diversas áreas e de diversos empregadores</h3>
+                    <span class="about-text">
+                        <br/>
+                        A Biulix tem como personalidade ser tecnológica, profissional, eficiente, barata e colaborativa.
+                        <br/>
+                        <br/>
+                        Temos foco em conectar pessoas a oportunidades de emprego,simplificando os processos de seleção de pessoal.
+                        <br/>
+                        <br/>
+                        Oferecemos aos candidatos plataforma de emprego com assinatura gratuita e opcionalmente assinatura paga.
+                        <br/>
+                        <br/>
+                        Os candidatos podem buscar vagas, candidatar-se gratuitamente a processos seletivos e acompanhar oportunidades de empregos.
+                        <br/>
+                        <br/>
+                        Através do serviço de ORIENTAÇÃO PARA RECOLOCAÇÃO PROFISSIONAL, oferecemos serviço específico de transição e desenvolvimento de carreira.
+                    </span>
+                </div>
+            </div>
+            <div class="how" id="how">
+                <img class="how-image desktop" src="public/img/candidate/how-desktop.png" alt="Imagem How">
+                <img class="how-image mobile" src="public/img/candidate/how-mobile.png" alt="Imagem How">
+                <h3 class="how-title">Como funciona a Conta Candidato</h3>
+                <div class="how-features">
+                    <div class="how-feature">
+                        <div class="how-feature-icon-container">
+                            <img class="how-feature-icon" src="public/img/icons/user.png" alt="ícone Feature">
+                        </div>
+                        <span class="how-feature-title">Abertura da Conta</span>
+                        <span class="how-feature-description">Abra sua conta gratuita, informe seu perfil profissional, informe suas formações escolares, informe suas experiências profissionais.</span>
+                    </div>
+                    <div class="how-feature">
+                        <div class="how-feature-icon-container">
+                            <img class="how-feature-icon" src="public/img/icons/find-text.png" alt="ícone Feature">
+                        </div>
+                        <span class="how-feature-title">Busque as Vagas</span>
+                        <span class="how-feature-description">Consulte as oportunidades disponíveis, por empresa, por estado e cidade das vagas de seu interesse.</span>
+                    </div>
+                    <div class="how-feature">
+                        <div class="how-feature-icon-container">
+                            <img class="how-feature-icon" src="public/img/icons/confirm.png" alt="ícone Feature">
+                        </div>
+                        <span class="how-feature-title">Candidate-se no PS</span>
+                        <span class="how-feature-description">Candidate-se nos PS — Processos Seletivos, cujo requisitos e atribuições mais se encaixam em seu perfil profissional</span>
+                    </div>
+                    <div class="how-feature">
+                        <div class="how-feature-icon-container">
+                            <img class="how-feature-icon" src="public/img/icons/desktop.png" alt="ícone Feature">
+                        </div>
+                        <span class="how-feature-title">Acompanhe suas Candidaturas</span>
+                        <span class="how-feature-description">Faça login em sua conta para acompanhar as candidaturas nos PSs que você se candidatou.</span>
+                    </div>
+                    <div class="how-feature">
+                        <div class="how-feature-icon-container">
+                            <img class="how-feature-icon" src="public/img/icons/notify.png" alt="ícone Feature">
+                        </div>
+                        <span class="how-feature-title">Preferências da Conta</span>
+                        <span class="how-feature-description">Defina as preferências de sua conta, como você deseja receber os informes relativo às vagas para seu perfil, entre outros.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="vacancies" id="vacancies">
                 <span class="vacancies-subtitle">VAGAS</span>
                 <h3 class="vacancies-title">Confira as Vagas</h3>
                 <div class="vacancies-list">
@@ -144,6 +223,10 @@
                     <span class="vacancies-button-text">Buscar Vagas</span>
                     <img class="button-icon-arrow" src="public/img/icons/right-blue.svg" alt="ícone Right Blue">
                 </a>
+            </div>
+            <div class="plans" id="plans">
+                <img class="plans-image desktop" src="public/img/candidate/plans-desktop.png" alt="Imagem Plans">
+                <img class="plans-image mobile" src="public/img/candidate/plans-mobile.png" alt="Imagem Plans">
             </div>
         </main>
         <footer>
