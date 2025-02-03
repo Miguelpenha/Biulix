@@ -261,6 +261,7 @@ footer {
 
 .footer-text-highlighted {
     font-weight: 900;
+    font-size: calc(var(--fonts-size-small));
 }
 
 .footer-text-highlighted-secondary {
@@ -339,9 +340,9 @@ footer {
 
 .footer-address {
     display: flex;
-    margin: 2em 0;
-    font-size: 1em;
+    margin: 4em 0;
     align-items: center;
+    font-size: var(--fonts-size-description);
 }
 
 .footer-address-text {

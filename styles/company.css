@@ -28,7 +28,7 @@
     padding: 0 1em;
     max-width: 100em;
     margin-top: 12em;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -60,6 +60,7 @@
 
 .initial-features {
     gap: 2em;
+    width: 80%;
     display: flex;
     margin-top: 2em;
     padding-top: 1em;
@@ -242,6 +243,7 @@
 
     .initial-features {
         gap: 0.5em;
+        width: 50%;
         flex-direction: column;
     }
 
