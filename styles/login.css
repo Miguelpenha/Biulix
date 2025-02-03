@@ -170,6 +170,10 @@ body {
         font-size: var(--fonts-size-description);
     }
 
+    .button-visibility {
+        top: 15%;
+    }
+
     .form-remember {
         gap: 0.2em;
         margin-top: 2em;
