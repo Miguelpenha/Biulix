@@ -190,8 +190,8 @@ body {
 
 .vacancy-location {
     font-weight: 900;
-    font-size: var(--fonts-size-subtitle);
     color: var(--colors-color-secondary);
+    font-size: calc(var(--fonts-size-subtitle) - 0.4em);
 }
 
 .vacancy-total-candidates {
@@ -332,10 +332,6 @@ body {
         padding-top: 2em;
     }
 
-    .vacancy-title {
-        font-size: var(--fonts-size-title);
-    }
-
     .vacancies-subtitle {
         font-size: var(--fonts-size-description);
     }
@@ -353,7 +349,7 @@ body {
     }
     
     .vacancy-company-name, .vacancy-location {
-        font-size: var(--fonts-size-description);
+        font-size: calc(var(--fonts-size-description) + 0.2em);
     }
     
     .vacancy-image, .vacancy-icon {
@@ -366,7 +362,7 @@ body {
     }
 
     .vacancy-title {
-        font-size: var(--fonts-size-description);
+        font-size: calc(var(--fonts-size-description) + 0.3em);
     }
 
     .vacancy-button {
