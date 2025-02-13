@@ -161,6 +161,7 @@
     top: 3em;
     right: 4em;
     width: 11em;
+    height: 2em;
     margin-top: 1em;
     position: absolute;
     align-self: center;
@@ -219,9 +220,10 @@
 
     .vacancy-button {
         width: 9em;
-        bottom: -50%;
         left: auto;
+        top: auto;
         right: auto;
+        bottom: 10%;
     }
 
     .vacancy-pcd-icon {
