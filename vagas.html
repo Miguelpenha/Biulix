@@ -60,6 +60,27 @@
                 <img class="initial-image desktop" src="public/img/candidate/vacancies/initial-desktop.png" alt="Imagem de fundo">
                 <img class="initial-image mobile" src="public/img/candidate/vacancies/initial-mobile.png" alt="Imagem de fundo">
                 <h1 class="initial-title">Buscar Vagas</h1>
+                <form action="" id="filters" class="filters">
+                    <div class="filters-inputs">
+                        <input name="employer" id="employer" class="filters-input" placeholder="Empregador">
+                        <input name="vacancy" id="vacancy" class="filters-input" placeholder="Nr Processo (vaga)">
+                        <input name="word" id="word" class="filters-input" placeholder="Cargo ou palavra-chave">
+                        <select name="state" id="state" class="filters-input filters-select">
+                            <option value="">Estado</option>
+                        </select>
+                        <select name="cities" id="cities" class="filters-input filters-select">
+                            <option value="">Cidades</option>
+                        </select>
+                    </div>
+                    <div class="filters-options">
+                        <div class="filters-container-checkbox">
+                            <input name="pcd" id="pcd" class="filters-checkbox" type="checkbox">
+                            <label for="pcd" class="filters-label">Vagas só para PCD<br/>Pessoas com Deficiência</label>
+                        </div>
+                        <button type="submit" class="button filters-button">Filtrar</button>
+                        <button type="reset" class="button filters-button">Limpar Filtros</button>
+                    </div>
+                </form>
             </div>
             <div class="vacancies" id="vacancies">
                 <div class="vacancies-list">
