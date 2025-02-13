@@ -203,6 +203,10 @@
     visibility: hidden;
 }
 
+footer {
+    background-image: linear-gradient(var(--colors-background-secondary), var(--colors-gradient));
+}
+
 @media screen and (max-width: 900px) {
     .header-options {
         display: none;
