@@ -253,12 +253,12 @@
 }
 
 @media screen and (max-width: 900px) {
-    .initial-image {
-        height: 30em;
-    }
-
     .header-options {
         display: none;
+    }
+
+    .initial-image {
+        height: 30em;
     }
 
     .initial-title {
