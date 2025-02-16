@@ -112,7 +112,7 @@ body {
 .vacancies {
     display: flex;
     padding-top: 4em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     align-items: center;
     background-color: var(--colors-background);
 }

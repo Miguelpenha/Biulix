@@ -40,10 +40,37 @@
         <!-- Google Tag Manager (noscript) -->
         
         <!-- End Google Tag Manager (noscript) -->
+        <script>
+            function changeTypeHeader() {
+                const url = new URL(window.document.location.toString())
+                const type = url.searchParams.get('type')
+
+                if (type) {
+                    const typeElement = window.document.createElement('div')
+
+                    typeElement.className = 'header-type'
+                    
+                    if (type === 'candidate') {
+                        typeElement.textContent = 'Candidato'
+                    } else if (type === 'company') {
+                        typeElement.textContent = 'Empresa'
+                    }
+                    
+                    const header = window.document.body.querySelector('header')
+
+                    header.appendChild(typeElement)
+                }
+            }
+
+            window.addEventListener('DOMContentLoaded', changeTypeHeader)
+        </script>
         <header>
             <a href="/" class="header-container-logo">
                 <img class="header-logo" src="public/img/Logo Biulix.png" alt="Logo Biulix">
             </a>
+            <div class="header-options">
+                <a class="header-option" href="/planos">Planos</a>
+            </div>
             <div class="header-buttons">
                 <a href="#" class="button-outlined">Abrir Conta</a>
                 <a href="/login" class="button">Fazer Login</a>
