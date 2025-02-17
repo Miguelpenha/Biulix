@@ -41,22 +41,49 @@
         
         <!-- End Google Tag Manager (noscript) -->
         <script>
+            function addOptions(element, options) {
+                options.map(option => {
+                    const optionElement = window.document.createElement('a')
+
+                    optionElement.href = option.href
+                    optionElement.textContent = option.text
+                    optionElement.className = 'header-option'
+
+                    element.appendChild(optionElement)
+                })
+            }
+
             function changeTypeHeader() {
                 const url = new URL(window.document.location.toString())
                 const type = url.searchParams.get('type')
 
                 if (type) {
                     const typeElement = window.document.createElement('div')
+                    const header = window.document.body.querySelector('header')
+                    const headerOptions = header.querySelector('.header-options')
 
                     typeElement.className = 'header-type'
                     
                     if (type === 'candidate') {
                         typeElement.textContent = 'Candidato'
+
+                        const options = [
+                            { text: 'Como Funciona', href: '/candidato#how' },
+                            { text: 'Buscar Vagas', href: '/vagas' },
+                            { text: 'Planos', href: '/candidato#plans' }
+                        ]
+
+                        addOptions(headerOptions, options)
                     } else if (type === 'company') {
                         typeElement.textContent = 'Empregador'
+
+                        const options = [
+                            { text: 'Como Funciona', href: '/empresa#how' },
+                            { text: 'Planos', href: '/empresa#plans' }
+                        ]
+
+                        addOptions(headerOptions, options)
                     }
-                    
-                    const header = window.document.body.querySelector('header')
 
                     header.appendChild(typeElement)
                 }
@@ -69,7 +96,7 @@
                 <img class="header-logo" src="public/img/Logo Biulix.png" alt="Logo Biulix">
             </a>
             <div class="header-options">
-                <a class="header-option" href="/planos">Planos</a>
+                
             </div>
             <div class="header-buttons">
                 <a href="#" class="button-outlined">Abrir Conta</a>
