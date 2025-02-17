@@ -57,7 +57,7 @@
                 const url = new URL(window.document.location.toString())
                 const type = url.searchParams.get('type')
 
-                if (type) {
+                if (type && ['candidate', 'company'].includes(type)) {
                     const typeElement = window.document.createElement('div')
                     const header = window.document.body.querySelector('header')
                     const headerOptions = header.querySelector('.header-options')
