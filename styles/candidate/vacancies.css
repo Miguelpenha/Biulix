@@ -66,12 +66,21 @@
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
+.filters-input::placeholder {
+    color: var(--colors-background-tertiary);
+}
+
 .filters-select {
     appearance: none;
     padding-right: 2em;
     -moz-appearance: none;
     -webkit-appearance: none;
+    
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='5'><polygon points='0,0 10,0 5,5' fill='%230064FF'/></svg>") no-repeat right 10px center;
+}
+
+.filters-select {
+    color: var(--colors-background-tertiary);
 }
 
 .filters-options {
