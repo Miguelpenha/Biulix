@@ -199,6 +199,14 @@
             </span>
         </footer>
         <script>
+            window.addEventListener('click', ev => {
+                const classList = ev.target.classList
+
+                if (classList.contains('modal-vacancy') && !classList.contains('hidden')) {
+                    hiddenModal()
+                }
+            })
+
             function hiddenModal() {
                 const modal = document.querySelector('.modal-vacancy')
 
@@ -215,7 +223,7 @@
                 document.body.style.overflowY = 'hidden'
             }
         </script>
-        <div class="modal-vacancy hidden" onclick="hiddenModal()">
+        <div class="modal-vacancy hidden">
             <div class="modal-vacancy-content">
                 <div class="vacancy-header">
                     <img class="vacancy-icon" src="public/img/icons/block.svg" alt="ícone Block">
