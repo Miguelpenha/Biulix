@@ -160,6 +160,7 @@ body {
 
 .vacancy-header-login {
     padding: 0.5em;
+    max-width: 20em;
     border-radius: 10px;
     background-color: var(--colors-background);
 }
@@ -256,6 +257,7 @@ body {
 
 .vacancy-button {
     width: 11em;
+    cursor: pointer;
     margin-top: 1em;
     align-self: center;
 }
