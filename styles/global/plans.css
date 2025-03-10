@@ -31,7 +31,8 @@
     margin-top: 2em;
     overflow: hidden;
     border-radius: 20px;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border: 1px solid var(--colors-background);
 }
 
 .plans-table th {
@@ -62,7 +63,7 @@
     vertical-align: middle;
     color: var(--colors-color-secondary);
     font-size: var(--fonts-size-description);
-    border: 2px solid var(--colors-background);
+    border: 1px solid var(--colors-background);
     background-color: var(--colors-background-secondary);
 }
 
@@ -194,6 +195,30 @@ td:nth-child(4)>.plans-button {
 
 td:nth-child(5)>.plans-button {
     background-color: #000000;
+}
+
+.plans-table tr:nth-child(1) th:nth-child(2) {
+    border: none;
+}
+
+.plans-table tr:nth-child(2) th:nth-child(2) {
+    border-left: none;
+}
+
+.plans-table tr:first-child th {
+    border-top: 0;
+}
+
+.plans-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.plans-table tr td:first-child, .plans-table tr th:first-child {
+    border-left: 0;
+}
+
+.plans-table tr td:last-child, .plans-table tr th:last-child {
+    border-right: 0;
 }
 
 .plans-obs {
