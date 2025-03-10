@@ -1,0 +1,108 @@
+.button {
+    width: 9em;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 30px;
+    flex-direction: row;
+    padding: 0.6em 0.3em;
+    text-decoration: none;
+    justify-content: center;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    font-size: var(--fonts-size-description);
+    background-color: var(--colors-primary);
+    border: 2px solid var(--colors-primary);
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button-outlined {
+    width: 9em;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 30px;
+    flex-direction: row;
+    padding: 0.6em 0.3em;
+    text-decoration: none;
+    justify-content: center;
+    transition-duration: 0.2s;
+    color: var(--colors-primary);
+    transition-timing-function: linear;
+    font-size: var(--fonts-size-description);
+    border: 2px solid var(--colors-primary);
+    background-color: var(--colors-background-secondary);
+}
+
+.button-outlined:hover {
+    transform: scale(1.05);
+}
+
+.button-outlined-secondary {
+    width: 9em;
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    padding: 0.6em 0.5em;
+    text-decoration: none;
+    justify-content: center;
+    transition-duration: 0.2s;
+    color: var(--colors-color);
+    transition-timing-function: linear;
+    border: 2px solid var(--colors-color);
+    font-size: var(--fonts-size-description);
+}
+
+.button-outlined-secondary:hover {
+    transform: scale(1.05);
+}
+
+.icon-button {
+    width: 12em !important;
+    padding: 0.2em 0.2em !important;
+    padding-left: 1em !important;
+}
+
+.button-icon-arrow {
+    width: 2.5em;
+    height: auto;
+    padding: 0.5em;
+    margin-left: auto;
+    border-radius: 50%;
+    background-color: var(--colors-color);
+}
+
+.button-icon-arrow-secondary {
+    background-color: var(--colors-primary);
+}
+
+.button-icon-alert {
+    width: 2.5em;
+    height: auto;
+    padding: 0.2em;
+    margin-left: auto;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 900px) {
+    .button, .button-outlined {
+        width: 7.5em;
+        padding: auto;
+    }
+
+    .social {
+        right: 1em;
+        gap: 0.5em;
+    }
+
+    .social-icon-container {
+        width: 1em;
+        height: 1em;
+        padding: 0.2em;
+    }
+}

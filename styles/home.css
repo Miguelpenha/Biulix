@@ -1,4 +1,4 @@
-@import url(global.css);
+@import url(global/index.css);
 
 body {
     background: var(--colors-background);

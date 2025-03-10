@@ -1,4 +1,4 @@
-@import url(../global.css);
+@import url(../global/index.css);
 
 .initial {
     height: 50em;
@@ -355,6 +355,7 @@
 
 .vacancy-button {
     width: 11em;
+    cursor: pointer;
     margin-top: 1em;
     align-self: center;
 }

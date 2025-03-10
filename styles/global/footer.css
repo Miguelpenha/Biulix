@@ -1,0 +1,227 @@
+footer {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    margin-top: 2em;
+    align-self: center;
+    background-image: linear-gradient(var(--colors-background), var(--colors-gradient));
+}
+
+.footer-secondary {
+    background: none;
+    background-image: linear-gradient(transparent, var(--colors-gradient));
+}
+
+.footer-content {
+    width: 80%;
+    display: flex;
+    max-width: 100em;
+    align-self: center;
+    position: relative;
+    padding: 1.5em 3em;
+    flex-direction: row;
+    border-radius: 15px;
+    flex-direction: row;
+    background-color: var(--colors-primary);
+}
+
+.footer-content-secondary {
+    background-color: var(--colors-background-secondary);
+}
+
+.social {
+    gap: 1em;
+    right: 2em;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+}
+
+.social-icon-container {
+    width: 2.3em;
+    height: 2.3em;
+    display: flex;
+    padding: 0.5em;
+    border-radius: 20px;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    background-color: var(--colors-background);
+}
+
+.social-icon-container-secondary {
+    background-color: var(--colors-primary);
+}
+
+.social-icon-container:hover {
+    transform: scale(1.1);
+}
+
+.social-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-texts {
+    gap: 1em;
+    flex: 0.8;
+    display: flex;
+    align-self: center;
+}
+
+.footer-text {
+    font-weight: 100;
+    font-size: var(--fonts-size-description);
+}
+
+.footer-text-secondary {
+    color: var(--colors-color-secondary);
+}
+
+.footer-text-highlighted {
+    font-weight: 900;
+    font-size: calc(var(--fonts-size-description) + 0.27em);
+}
+
+.footer-text-highlighted-secondary {
+    color: var(--colors-color-secondary);
+}
+
+.download {
+    gap: 1em;
+    display: flex;
+    margin-top: 5em;
+    margin-left: auto;
+    align-self: flex-end;
+}
+
+.download-title {
+    font-weight: 900;
+    font-size: var(--fonts-size-subtitle);
+}
+
+.download-title-secondary {
+    color: var(--colors-color-secondary);
+}
+
+.download-buttons {
+    gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.download-button {
+    gap: 1em;
+    height: 3em;
+    width: 12.5em;
+    display: flex;
+    padding: 1.5em;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 30px;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    font-size: var(--fonts-size-description);
+    background-color: var(--colors-background-secondary);
+}
+
+.download-button:hover {
+    transform: scale(1.1);
+}
+
+.download-button-secondary {
+    border: 2px solid var(--colors-primary);
+}
+
+.download-image {
+    left: 0.3em;
+    width: 2.5em;
+    height: auto;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.borderless-download-image {
+    width: 2em;
+    left: 1.3em;
+    border-radius: 0%;
+}
+
+.download-text {
+    margin-left: 3em;
+    font-weight: 900;
+    color: var(--colors-color-secondary);
+    font-size: var(--fonts-size-description);
+}
+
+.footer-address {
+    display: flex;
+    margin: 0.5em 0;
+    align-items: center;
+    font-size: var(--fonts-size-description);
+}
+
+.footer-address-text {
+    font-size: 1em;
+    text-align: center;
+    color: var(--colors-color-secondary);
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        padding: 0 1em;
+        margin-top: 0em;
+    }
+
+    .footer-content {
+        width: 98%;
+        padding: 1em;
+        flex-direction: column;
+    }
+
+    .footer-texts {
+        flex: 1;
+        margin-top: 1em;
+    }
+    
+    .download {
+        gap: 0.5em;
+        margin-left: 0;
+        margin-top: 1em;
+        align-self: flex-start;
+    }
+
+    .download-title {
+        font-size: var(--fonts-size-description);
+    }
+
+    .download-buttons {
+        flex-direction: row;
+    }
+
+    .download-button {
+        height: 2em;
+        width: 8.5em;
+        padding: 0.5em;
+    }
+
+    .download-image {
+        left: 0.2em;
+        width: 1.5em;
+    }
+
+    .borderless-download-image {
+        width: 1em;
+        left: 0.8em;
+    }
+
+    .download-text {
+        margin-left: 2.8em;
+    }
+
+    .footer-address, .footer-address-text {
+        font-size: calc(var(--fonts-size-description) - 0.1em);
+    }
+}

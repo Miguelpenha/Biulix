@@ -182,7 +182,7 @@
                             <span class="vacancy-profile">Perfil Profissional do Processo</span>
                             <span class="vacancy-education"><span class="vacancy-education-highlighted">Escolaridade</span>: Ensino Médio</span>
                             <span class="vacancy-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</span>
-                            <a href="#" class="button-outlined vacancy-button">Saber Mais</a>
+                            <button onclick="showModal()" class="button-outlined vacancy-button">Saber Mais</a>
                         </div>
                         <img class="vacancy-pcd-icon" src="public/img/icons/pcd.svg" alt="ícone PCD">
                     </div>
@@ -201,7 +201,7 @@
                             <span class="vacancy-profile">Perfil Profissional do Processo</span>
                             <span class="vacancy-education"><span class="vacancy-education-highlighted">Escolaridade</span>: Ensino Médio</span>
                             <span class="vacancy-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</span>
-                            <a href="#" class="button-outlined vacancy-button">Saber Mais</a>
+                            <button onclick="showModal()" class="button-outlined vacancy-button">Saber Mais</a>
                         </div>
                     </div>
                     <div class="vacancy">
@@ -216,7 +216,7 @@
                             <span class="vacancy-profile">Perfil Profissional do Processo</span>
                             <span class="vacancy-education"><span class="vacancy-education-highlighted">Escolaridade</span>: Ensino Médio</span>
                             <span class="vacancy-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</span>
-                            <a href="#" class="button-outlined vacancy-button">Saber Mais</a>
+                            <button onclick="showModal()" class="button-outlined vacancy-button">Saber Mais</a>
                         </div>
                         <img class="vacancy-pcd-icon" src="public/img/icons/pcd.svg" alt="ícone PCD">
                     </div>
@@ -471,5 +471,77 @@
                 <span class="footer-address-text">26.374.628/0001-40 - Handa Tecnologia em Rede de Empregos Ltda</span>
             </span>
         </footer>
+        <script>
+            window.addEventListener('click', ev => {
+                const classList = ev.target.classList
+
+                if (classList.contains('modal-vacancy') && !classList.contains('hidden')) {
+                    hiddenModal()
+                }
+            })
+
+            function hiddenModal() {
+                const modal = document.querySelector('.modal-vacancy')
+
+                modal.classList.add('hidden')
+
+                document.body.style.overflowY = 'auto'
+            }
+
+            function showModal() {
+                const modal = document.querySelector('.modal-vacancy')
+
+                modal.classList.remove('hidden')
+
+                document.body.style.overflowY = 'hidden'
+            }
+        </script>
+        <div class="modal-vacancy hidden">
+            <div class="modal-vacancy-content">
+                <div class="vacancy-header">
+                    <img class="vacancy-icon" src="public/img/icons/block.svg" alt="ícone Block">
+                    <div class="vacancy-company">
+                        <span class="vacancy-company-name">Empresa Confidencial</span>
+                        <span class="vacancy-location">Cidade - UF</span>
+                        <span class="vacancy-total-candidates"><span class="vacancy-total-candidates-highlighted">Candidatos: </span>587 | 1 Vaga</span>
+                        <span class="vacancy-payment"><span class="vacancy-payment-highlighted">Remuneração</span>: R$ Confidencial</span>
+                    </div>
+                </div>
+                <div class="vacancy-content">
+                    <span class="vacancy-title">9999 - Nome da Vaga</span>
+                    <span class="modal-vacancy-profile">Perfil Profissional do Processo</span>
+                    <span class="moda-vacancy-education"><span class="vacancy-education-highlighted">Escolaridade</span>: Ensino Médio</span>
+                    <div class="modal-vacancy-field">
+                        <span class="modal-vacancy-field-title">Regime de Contratação</span>
+                        <span class="modal-vacancy-field-text">Efetivo Tempo Indeterminado</span>
+                    </div>
+                    <div class="modal-vacancy-field">
+                        <span class="modal-vacancy-field-title">Horário de Trabalho</span>
+                        <span class="modal-vacancy-field-text">Segunda a quinta das 8h às 18h e sexta das 8h às 17h sendo, com 1h para almoço.</span>
+                    </div>
+                    <div class="modal-vacancy-field">
+                        <span class="modal-vacancy-field-title">Benefícios</span>
+                        <span class="modal-vacancy-field-text">Transporte e alimentação.</span>
+                    </div>
+                    <div class="modal-vacancy-field">
+                        <span class="modal-vacancy-field-title">Requisitos</span>
+                        <span class="modal-vacancy-field-text">Ensino Superior em Administração, Psicologia, Recursos Humanos ou áreas correlatas. Experiência prévia em atividades de administração de pessoal. Conhecimento em legislação trabalhista, previdenciária e normas relacionadas à área de pessoal. Domínio de sistemas de folha de pagamento e conhecimento avançado em Excel. Boa capacidade de comunicação, negociação e relacionamento interpessoal. Orientação para resultados. Proatividade, organização e capacidade de análise crítica. Comprometimento com a confidencialidade das informações dos colaboradores e ética profissional.</span>
+                    </div>
+                    <div class="modal-vacancy-field">
+                        <span class="modal-vacancy-field-title">Atribuições</span>
+                        <span class="modal-vacancy-field-text">Realizar a gestão e administração de todos os processos relacionados à área de pessoal da empresa. Supervisionar as atividades de recrutamento e seleção e a integração dos novos colaboradores. Elaborar e conduzir programas de treinamento e desenvolvimento, identificando as necessidades de capacitação dos colaboradores e promovendo ações para o seu desenvolvimento profissional. Atuar no planejamento e execução de avaliações de desempenho, feedbacks e planos de desenvolvimento individual. Validar os processos de folha de pagamento, garantindo o correto processamento de salários, benefícios, descontos e demais verbas trabalhistas. Realizar o controle e atualização de dados cadastrais dos colaboradores nos sistemas internos da empresa e em órgãos governamentais. Assegurar o cumprimento das obrigações legais trabalhistas e previdenciárias, mantendo-se atualizado quanto às alterações na legislação. Prestar suporte e orientação aos gestores e colaboradores em questões relacionadas a direitos trabalhistas, benefícios, políticas internas e demais assuntos relacionados à área de pessoal.</span>
+                    </div>
+                </div>
+                <div class="modal-vacancy-footer">
+                    <a href="#" class="button modal-vacancy-button">Quero me candidatar</a>
+                    <button class="modal-vacancy-back" onclick="hiddenModal()">Voltar</button>
+                </div>
+                <img class="modal-vacancy-pcd-icon" src="public/img/icons/pcd.svg" alt="ícone PCD">
+                <a href="#" class="button-outlined-secondary icon-button modal-vacancy-report">
+                    <span class="button-text">Denunciar</span>
+                    <img class="button-icon-alert" src="public/img/icons/alert.png" alt="ícone Alert">
+                </a>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,160 @@
+.modal-vacancy {
+    z-index: 1;
+    width: 100%;
+    height: 100dvh;
+    position: fixed;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-vacancy.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.modal-vacancy-content {
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 80%;
+    padding: 2em;
+    display: flex;
+    max-width: 52em;
+    margin: 2em auto;
+    position: absolute;
+    border-radius: 15px;
+    height: max-content;
+    background-image: linear-gradient(
+        to bottom,
+        /* Top */
+        var(--colors-gradient) 0%, 
+        #ffffff 15%,
+        /* Mid */
+        #ffffff 15%, 
+        #ffffff 85%,
+        /* Bottom */
+        #ffffff 85%, 
+        var(--colors-gradient) 100%
+    );
+}
+
+.modal-vacancy-profile {
+    font-style: italic;
+    color: var(--colors-color-secondary);
+    font-size: var(--fonts-size-description);
+}
+
+.moda-vacancy-education {
+    margin: 0.4em 0;
+    color: var(--colors-color-secondary);
+    font-size: var(--fonts-size-description);
+}
+
+.modal-vacancy-field {
+    display: flex;
+    margin-top: 1.5em;
+}
+
+.modal-vacancy-field-title {
+    font-weight: 900;
+    font-size: var(--fonts-size-small);
+    color: var(--colors-color-secondary);
+}
+
+.modal-vacancy-field-text {
+    font-size: var(--fonts-size-small);
+    color: var(--colors-color-secondary);
+}
+
+.modal-vacancy-footer {
+    gap: 2em;
+    display: flex;
+    margin-top: 5em;
+    align-items: center;
+}
+
+.modal-vacancy-button {
+    width: 14em;
+}
+
+.modal-vacancy-back {
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+    background: transparent;
+    color: var(--colors-primary);
+    font-size: var(--fonts-size-description);
+}
+
+.modal-vacancy-pcd-icon {
+    top: 5em;
+    width: 4em;
+    right: 3em;
+    height: auto;
+    position: absolute;
+}
+
+.modal-vacancy-report {
+    top: 17em;
+    right: 3em;
+    height: auto;
+    position: absolute;
+    width: 10em !important;
+    border-color: var(--colors-primary);
+}
+
+.modal-vacancy-report>.button-text {
+    color: var(--colors-primary);
+}
+
+@media screen and (max-width: 900px) {
+    .modal-vacancy-content {
+        padding: 1em;
+    }
+
+    .modal-vacancy-profile, .moda-vacancy-education  {
+        font-size: calc(var(--fonts-size-description) + 0.1em);
+    }
+
+    .modal-vacancy-field {
+        margin-top: 0.5em;
+    }
+
+    .modal-vacancy-field-title {
+        font-size: calc(var(--fonts-size-description) + 0.1em);
+    }
+
+    .modal-vacancy-field-text {
+        font-size: var(--fonts-size-description);
+    }
+    
+    .modal-vacancy-footer {
+        gap: 1em;
+        margin: 1.5em 0;
+    }
+
+    .modal-vacancy-button {
+        width: 12em;
+    }
+    
+    .modal-vacancy-pcd-icon {
+        top: 2em;
+        right: 1em;
+        width: 2.5em;
+    }
+
+    .modal-vacancy-report {
+        top: 8em;
+        right: 1em;
+        width: 7em !important;
+    }
+
+    .modal-vacancy-report>.button-text {
+        font-size: var(--fonts-size-description);
+    }
+
+    .button-icon-alert {
+        width: 1.5em;
+    }
+}
