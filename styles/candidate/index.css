@@ -375,20 +375,6 @@
     margin: auto;
 }
 
-.plans {
-    
-}
-
-.plans-image {
-    width: 100%;
-    display: flex;
-}
-
-.plans-image.mobile {
-    display: none;
-    visibility: hidden;
-}
-
 footer {
     background-image: linear-gradient(var(--colors-background-secondary), var(--colors-gradient));
 }
@@ -581,15 +567,5 @@ footer {
         right: 1em;
         height: auto;
         bottom: 1.5em;
-    }
-
-    .plans-image.mobile {
-        display: block;
-        visibility: visible;
-    }
-
-    .plans-image.desktop {
-        display: none;
-        visibility: hidden;
     }
 }
