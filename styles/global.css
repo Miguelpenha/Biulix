@@ -772,7 +772,7 @@ footer {
     }
 
     .plans-container-table {
-        align-items: flex-start;
+        align-items: flex-start !important;
     }
 
     footer {
